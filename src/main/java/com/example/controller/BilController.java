@@ -21,6 +21,7 @@ public class BilController {
     @GetMapping("/listbil")
     public Result list(){
         List<BilReturn> listBilReturn = bilService.listBil();
+        System.out.println(123);
         return Result.success(listBilReturn);
     }
 }
